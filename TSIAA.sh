@@ -1,0 +1,4 @@
+python main.py --base configs/efficientUnet_CHAOS_to_SABSCT.yaml --seed 23 LGAug.loss_aug_param=0.75 LGAug.consistent_param=0 LGAug.learning_rateforaug=0.001 LGAug.learning_rateforaug2=0.001 
+python main.py --base configs/efficientUnet_bSSFP_to_LEG.yaml --seed 23 LGAug.loss_aug_param=0.43  LGAug.consistent_param=1 LGAug.learning_rateforaug=0.001 LGAug.learning_rateforaug2=0.001
+python main.py --base configs/efficientUnet_LEG_to_bSSFP.yaml --seed 23 LGAug.loss_aug_param=1 LGAug.consistent_param=0 LGAug.learning_rateforaug=0.001 LGAug.learning_rateforaug2=0.001
+python main.py --base configs/efficientUnet_SABSCT_to_CHAOS.yaml --seed 23 LGAug.loss_aug_param=0.3 LGAug.consistent_param=0.5 LGAug.learning_rateforaug=0.001 LGAug.learning_rateforaug2=0.001 
